@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.*;
 import javax.validation.Valid;
 
 @Controller
-public class HellghoController {
+public class HelloController {
 
 	@Autowired
 	protected GuestBookService guestBookService;
