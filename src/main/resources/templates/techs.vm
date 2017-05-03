@@ -13,12 +13,12 @@
     <p>
 
         #springBind("form.name")#springShowErrors("<br/>", "text-danger")
-        Name: #springFormInput("form.name")
+        Tech Make: #springFormInput("form.name")
 
         </br>
 
         #springBind("form.comment")#springShowErrors("<br/>", "text-danger")
-        Comment: #springFormInput("form.comment")
+        Tech Model: #springFormInput("form.comment")
 
         <input type="submit"/>
 

@@ -5,12 +5,16 @@ import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
+
+import javax.validation.constraints.Size;
+import javax.validation.constraints.Min;
+import javax.validation.constraints.NotNull;
 import javax.persistence.*;
 import java.util.Date;
 
 @Entity
 @EntityListeners(AuditingEntityListener.class)
-public class GuestBookEntry {
+public class TechSEntry {
 
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
@@ -18,9 +22,12 @@ public class GuestBookEntry {
     private Long id;
 
     @NotEmpty
+    @NotNull
+    @Size(min=2, max=30)
     private String name;
 
     @NotEmpty
+    @Min(8)
     private String comment;
 
     @CreatedDate
