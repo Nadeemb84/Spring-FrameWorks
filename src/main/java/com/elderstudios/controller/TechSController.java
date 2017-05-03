@@ -13,6 +13,7 @@ import javax.validation.Valid;
 @Controller
 public class TechSController {
 
+
 	@Autowired
 	protected TechSService techSService;
 
